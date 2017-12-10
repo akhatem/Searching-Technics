@@ -34,6 +34,6 @@ int main(){
 	if(flag == true)
 		printf("The number %d is found\n",arr[mid]);
 	else
-		printf("The number %d not found\n", arr[mid]);
+		printf("The number %d not found\n", input);
 	return 0;
 }
