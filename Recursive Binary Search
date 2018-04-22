@@ -23,7 +23,7 @@ int binarySearch(int arr[], int l, int r, int x){
       scanf("%d", &arr[i]);     // Scanning the array
     }
     int result = binarySearch(arr, 0, N-1, x);
-    (result == -1)? printf("Element no found in the array\n") : printf("Element found at index %d\n");
+    (result == -1)? printf("Element not found\n") : printf("Element found at index %d\n", result);
       // If the result returned from the binarySearch function is -1, the value x is not found in the array
       // Otherwise the element is found and the index is printed.
      return 0;
