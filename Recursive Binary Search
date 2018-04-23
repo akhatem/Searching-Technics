@@ -3,7 +3,7 @@
 
 int binarySearch(int arr[], int l, int r, int x){
   if(r >= 1){                    // If the index of the last element is greater than or equal to 1
-    int mid = l + (r-1)/2;       // Initializing the middle index of the array
+    int mid = l + (r - l) /2;       // Initializing the middle index of the array
     if(arr[mid] == x)            // If the current element value equals the value of x
       return mid;                // Return the index of the element
     if(arr[mid] > x)             // If the current element value is greater than the value of x
@@ -23,7 +23,7 @@ int binarySearch(int arr[], int l, int r, int x){
       scanf("%d", &arr[i]);     // Scanning the array
     }
     int result = binarySearch(arr, 0, N-1, x);
-    (result == -1)? printf("Element not found\n") : printf("Element found at index %d\n", result);
+    (result == -1)? printf("Element not found in the array\n") : printf("Element found at index %d\n", result);
       // If the result returned from the binarySearch function is -1, the value x is not found in the array
       // Otherwise the element is found and the index is printed.
      return 0;
