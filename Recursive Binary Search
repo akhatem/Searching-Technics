@@ -3,7 +3,7 @@
 
 int binarySearch(int arr[], int l, int r, int x){
   if(r >= 1){                    // If the index of the last element is greater than or equal to 1
-    int mid = l + (r - l) /2;       // Initializing the middle index of the array
+    int mid = l + (r - l) /2;       // Declaring & Initializing the middle index of the array
     if(arr[mid] == x)            // If the current element value equals the value of x
       return mid;                // Return the index of the element
     if(arr[mid] > x)             // If the current element value is greater than the value of x
